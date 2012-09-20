@@ -1,3 +1,10 @@
+nvidia-common (1:0.2.45) quantal; urgency=low
+
+  * Don't write to /usr/share for hybrid graphics
+    detection, use /var/lib instead (LP: #976779).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 15 May 2012 14:30:07 +0200
+
 nvidia-common (1:0.2.44) precise; urgency=low
 
   [ Ricardo Salveti de Araujo ]
