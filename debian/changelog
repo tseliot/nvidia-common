@@ -1,3 +1,9 @@
+nvidia-common (1:0.2.46) UNRELEASED; urgency=low
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 20 Sep 2012 16:08:56 +0200
+
 nvidia-common (1:0.2.45) quantal; urgency=low
 
   * Don't write to /usr/share for hybrid graphics
