@@ -133,8 +133,7 @@ class NvidiaDetection(object):
 
         for package in apt.Cache():
             if (not package.name.startswith('nvidia-')
-                or 'updates' in package.name
-                or 'experimental' in package.name):
+                or 'updates' in package.name):
                 continue
             try:
                 m = package.candidate.record['Modaliases']
