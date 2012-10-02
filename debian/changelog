@@ -1,16 +1,23 @@
-nvidia-common (1:0.2.46) precise-proposed; urgency=low
+nvidia-common (1:0.2.44.2) precise-proposed; urgency=low
 
+  * NvidiaDetector/nvidiadetector.py:  When a package has multiple words
+    separated with -'s, use only the last element as the driver version.
+    (LP: #1047681)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 27 Sep 2012 22:27:56 -0700
+
+nvidia-common (1:0.2.44.1) precise-proposed; urgency=low
+
+  [Alberto Milone]
   * NvidiaDetector/nvidiadetector.py:
     - Add support for -experimental flavours (LP: #1047681).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 20 Sep 2012 16:10:00 +0200
-
-nvidia-common (1:0.2.45) quantal; urgency=low
-
   * Don't write to /usr/share for hybrid graphics
     detection, use /var/lib instead (LP: #976779).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Tue, 15 May 2012 14:30:07 +0200
+  [Bryce Harrington]
+  * nvidia-common.templates: Fix lintian error (trailing whitespace)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Wed, 26 Sep 2012 17:12:03 -0700
 
 nvidia-common (1:0.2.44) precise; urgency=low
 

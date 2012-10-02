@@ -146,7 +146,8 @@ class NvidiaDetection(object):
 
             # package names can be like "nvidia-173:i386" and we need to
             # extract the driver flavour from the name e.g. "173"
-            stripped_package_name = package.name.split('-', 1)[1].split(':', 1)[0]
+            name_parts = package.name.split('-')
+            stripped_package_name = name_parts.pop().split(':', 1)[0]
             driver_version = self.__get_value_from_name(stripped_package_name)
 
             try:
